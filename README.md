@@ -348,3 +348,14 @@ packages which will help to invoke tests through tox (Note that tox version
   ```
   $ OPENBMC_HOST=xx.xx.xx.xx tox -e default -- --argumentfile test_lists/HW_CI  redfish/  ipmi/
   ```
+
+**Command**
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+deactivate
+
+robot -V env.py templates/test_openbmc_setup.robot
+robot -V env.py -A test_lists/QEMU_CI  redfish/ ipmi/
+```
