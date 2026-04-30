@@ -357,5 +357,5 @@ source .venv/bin/activate
 deactivate
 
 robot -V env.py templates/test_openbmc_setup.robot
-robot -V env.py -A test_lists/QEMU_CI  redfish/ ipmi/
+robot -V env.py -A test_lists/QEMU_CI redfish/ ipmi/
 ```
